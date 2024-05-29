@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FOODIES</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" />
+    <link rel="stylesheet" href="./css/main.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.5.0/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="nav-center">
+            <div class="nav-header">
+                <a href="index.html" class="nav-logo">
+                    <img src="./images/logo.svg" alt="recipes" />
+                </a>
+                <button class="nav-btn btn">
+                    <i class="fas fa-align-justify"></i>
+                </button>
+            </div>
+            <div id="lin" class="nav-links">
+                <a href="index.html" class="nav-link"> home </a>
+                <a href="recipes.html" class="nav-link"> recipes </a>
+                <a href="about.html" class="nav-link"> about </a>
+                <div class="nav-link contact-link">
+                    <a href="contact.html" class="btn"> contact us </a>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <main class="page">
+        <header id="a" class="hero">
+            <div class="hero-container">
+                <div class="hero-text">
+                    <h1>simple recipes</h1>
+                    <h4>no fluff, just recipes</h4>
+                </div>
+            </div>
+            <a class="prev" onclick="l()"><i class="fas fa-solid fa-chevron-left"></i></a>
+            <a class="next" onclick="r()"><i class="fas fa-solid fa-chevron-right"></i></a>
+        </header>
+
+        <header id="b" class="b" style="display: none;">
+            <div class="ba">
+                <div class="bab">
+                    <h1>simple recipes</h1>
+                    <h4>no fluff, just recipes</h4>
+                </div>
+            </div>
+            <a class="prev" onclick="l()"><i class="fas fa-solid fa-chevron-left"></i></a>
+            <a class="next" onclick="r()"><i class="fas fa-solid fa-chevron-right"></i></a>
+        </header>
+
+        <header id="c" class="c" style="display: none;">
+            <div class="ca">
+                <div class="cab">
+                    <h1>simple recipes</h1>
+                    <h4>no fluff, just recipes</h4>
+                </div>
+            </div>
+            <a class="prev" onclick="l()"><i class="fas fa-solid fa-chevron-left"></i></a>
+            <a class="next" onclick="r()"><i class="fas fa-solid fa-chevron-right"></i></a>
+        </header>
+
+        <header id="d" class="d" style="display: none;">
+            <div class="ca">
+                <div class="cab">
+                    <h1>simple recipes</h1>
+                    <h4>no fluff, just recipes</h4>
+                </div>
+            </div>
+            <a class="prev" onclick="l()"><i class="fas fa-solid fa-chevron-left"></i></a>
+            <a class="next" onclick="r()"><i class="fas fa-solid fa-chevron-right"></i></a>
+        </header>
+
+        <script>
+            let index = 0;
+
+            function toggleElement(indexToDisplay) {
+                const list = ["a", "b", "c", "d"];
+
+                for (let i = 0; i < list.length; i++) {
+                    document.getElementById(list[i]).style.display = "none";
+                }
+
+                document.getElementById(list[indexToDisplay]).style.display = "block";
+            }
+
+            function l() {
+                index = (index + 1) % 4;
+                toggleElement(index);
+            }
+
+            function r() {
+                index = (index - 1 + 4) % 4;
+                toggleElement(index);
+            }
+        </script>
+        <section class="about-page">
+            <article>
+                <h2>The Most Popular Recipe On FOODIES Right Now </h2>
+                <p>
+                    Dive into a masterpiece that harmonizes a medley of textures and tastes. This dish is a true
+                    testament to the magic that can happen in your kitchen. A balance of sweet, savory, and umami, it's
+                    sure to elevate your palate to new heights.</p>
+                <p>
+                    Embark on a gastronomic journey with this international sensation. It's a passport to flavors from
+                    far-flung places, beautifully crafted to transport you to distant lands without leaving your
+                    kitchen.
+                </p>
+            </article><a href="a3.html">
+                <img src="./images//recipes/mom.jpeg" alt="Person Pouring Salt in Bowl" class="img about-img" /></a>
+        </section>
+        <section class="about-page">
+            <a href="a3.html">
+                <img src="./images//cook.jpg" alt="Person Pouring Salt in Bowl" class="img about-img" /></a>
+            <article>
+                <h2>Why We Built Our Food Recipe Website</h2>
+                <p>
+                    One of our primary motivations was to celebrate the rich tapestry of global cuisines.
+                     We recognize that food is an integral part of culture and identity.</p>
+                <p>
+                    In an era where fast food and processed meals have become all too common,
+                     we wanted to promote healthier eating habits. Our recipes often emphasize the use of fresh, wholesome ingredients 
+                    and provide nutritional information. We believe that by making nutritious cooking enjoyable,
+                     we can contribute to healthier lifestyles.
+                </p>
+            </article>
+        </section>
+      </main>
+      <footer class="page-footer">
+        <p>
+          &copy; <span id="date"></span>
+          <span class="footer-logo">FOODIES</span> Built by
+          <a href="https://www.instagram.com/jcer_belagavi_/"> JCER Students</a>
+        </p>
+      </footer>
+  </body>
+</html>

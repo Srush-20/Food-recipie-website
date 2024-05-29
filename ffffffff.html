@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FOODIES</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="./css/main.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.5.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="nav-center">
+        <div class="nav-header">
+          <a href="index.html" class="nav-logo">
+            <img src="./images/logo.svg" alt="simply recipes" />
+          </a>
+          <button class="nav-btn btn">
+            <i class="fas fa-align-justify" onclick="window.scrollTo(0, document.body.scrollHeight);"></i>
+          </button>
+        </div>
+        <div class="nav-links">
+          <a href="index.html" class="nav-link"> home </a>
+          <a href="recipes.html" class="nav-link"> recipes </a>
+          <a href="about.html" class="nav-link"> about </a>
+          <div class="nav-link contact-link">
+            <a href="contact.html" class="btn"> contact us </a>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <main class="page">
+      <header id="a" class="hero">
+        <div class="hero-container">
+          <div class="hero-text">
+            <h1>simple recipes</h1>
+            <h4>no fluff, just recipes</h4>
+          </div>
+        </div>
+        <a class="prev" onclick="l()"><i class="fas fa-solid fa-chevron-left"></i></a>
+        <a class="next" onclick="r()"><i class="fas fa-solid fa-chevron-right"></i></a>
+      </header>
+
+      <header id="b" class="b" style="display: none;">
+        <div class="ba">
+          <div class="bab">
+            <h1>simple recipes</h1>
+            <h4>no fluff, just recipes</h4>
+          </div>
+        </div>
+        <a class="prev" onclick="l()"><i class="fas fa-solid fa-chevron-left"></i></a>
+        <a class="next" onclick="r()"><i class="fas fa-solid fa-chevron-right"></i></a>
+      </header>
+
+      <header id="c" class="c" style="display: none;">
+        <div class="ca">
+          <div class="cab">
+            <h1>simple recipes</h1>
+            <h4>no fluff, just recipes</h4>
+          </div>
+        </div>
+        <a class="prev" onclick="l()"><i class="fas fa-solid fa-chevron-left"></i></a>
+        <a class="next" onclick="r()"><i class="fas fa-solid fa-chevron-right"></i></a>
+      </header>
+
+      <header id="d" class="d" style="display: none;">
+        <div class="ca">
+          <div class="cab">
+            <h1>simple recipes</h1>
+            <h4>no fluff, just recipes</h4>
+          </div>
+        </div>
+        <a class="prev" onclick="l()"><i class="fas fa-solid fa-chevron-left"></i></a>
+        <a class="next" onclick="r()"><i class="fas fa-solid fa-chevron-right"></i></a>
+      </header>
+
+      <script>
+        let index = 0;
+
+        function toggleElement(indexToDisplay) {
+        const list = ["a", "b", "c", "d"];
+
+        for (let i = 0; i < list.length; i++) {
+          document.getElementById(list[i]).style.display = "none";
+        }
+
+        document.getElementById(list[indexToDisplay]).style.display = "block";
+        }
+
+        function l() {
+          index = (index + 1) % 4;
+          toggleElement(index);
+        }
+
+        function r() {
+          index = (index - 1 + 4) % 4;
+          toggleElement(index);
+        }
+      </script>
+      <section class="recipes-container">
+        <div class="tags-container">
+          <h4>recipes</h4>
+          <div class="tags-list">
+            <a href="veg.html">Veg</a>
+            <a href="non_veg.html">Non-veg</a>
+            <a href="vegan.html">Vegan</a>
+            <a href="faast.html">Faast</a>
+          </div>
+        </div>
+        <div class="recipes-list">
+          <a href="s_veg.html" class="recipe">
+            <img
+              src="./images/recipes/pasta.jpeg"
+              class="img recipe-img"
+              alt=""
+            />
+            <h5>Carbonara Pasta </h5>
+            <p>Prep : 10min | Cook : 15min</p>
+          </a>
+          <a href="a1.html" class="recipe">
+            <img
+              src="./images/recipes/recipe-3.jpeg"
+              class="img recipe-img"
+              alt=""
+            />
+            <h5>Tomato Soup</h5>
+            <p>Prep : 15min | Cook : 5min</p>
+          </a>
+          <a href="a2.html" class="recipe">
+            <img
+              src="./images/recipes/recipe-4.jpeg"
+              class="img recipe-img"
+              alt=""
+            />
+            <h5>Pancakes</h5>
+            <p>Prep : 15min | Cook : 5min</p>
+          </a>
+          <a href="a3.html" class="recipe">
+            <img
+              src="./images/recipes/mom.jpeg"
+              class="img recipe-img"
+              alt=""
+            />
+            <h5>Momos </h5>
+            <p>Prep : 10min | Cook : 10min</p>
+          </a>
+          <a href="b1.html" class="recipe">
+            <img
+              src="./images/recipes/thai.jpeg"
+              class="img recipe-img"
+              alt=""
+            />
+            <h5>Thai Rice </h5>
+            <p>Prep : 8min | Cook : 15min</p>
+          </a>
+          <a href="s_nonveg.html" class="recipe">
+            <img
+              src="./images/recipes/bir.jpeg"
+              class="img recipe-img"
+              alt=""
+            />
+            <h5>Chicken Biryani </h5>
+            <p>Prep : 50min | Cook : 20min</p>
+          </a>
+          <a href="s_nonveg.html" class="recipe">
+            <img
+              src="./images/recipes/recipe-1.jpeg"
+              class="img recipe-img"
+              alt=""
+            />
+            <h5>Chicken Kheema </h5>
+            <p>Prep : 15min | Cook : 5min</p>
+          </a>
+          <a href="s_nonveg.html" class="recipe">
+            <img
+              src="./images/recipes/recipe-2.jpeg"
+              class="img recipe-img"
+              alt=""
+            />
+            <h5>Mutton Ribs</h5>
+            <p>Prep : 15min | Cook : 5min</p>
+          </a>
+          <a href="s_vegan.html" class="recipe">
+            <img
+              src="./images/recipes/Bread-Upma.jpg"
+              class="img recipe-img"
+              alt=""
+            />
+            <h5>Bread Upma </h5>
+            <p>Prep : 8min | Cook : 15min</p>
+          </a>
+          <a href="s_vegan.html" class="recipe">
+            <img
+              src="./images/recipes/mango-curry.jpg"
+              class="img recipe-img"
+              alt=""
+            />
+            <h5>Mango Curry </h5>
+            <p>Prep : 50min | Cook : 20min</p>
+          </a>
+          <a href="s_vegan.html" class="recipe">
+            <img
+              src="./images/recipes/stuffed-okra.jpg"
+              class="img recipe-img"
+              alt=""
+            />
+            <h5>Stuffed Okra </h5>
+            <p>Prep : 15min | Cook : 5min</p>
+          </a>
+          <a href="s_vegan.html" class="recipe">
+            <img
+              src="./images/recipes/khaman-dhokla.jpg"
+              class="img recipe-img"
+              alt=""
+            />
+            <h5>Khaman Dhokla</h5>
+            <p>Prep : 15min | Cook : 5min</p>
+          </a>
+          <a href="s_faast.html" class="recipe">
+            <img
+              src="./images/recipes/kuttu-paratha.jpeg"
+              class="img recipe-img"
+              alt=""
+            />
+            <h5>Kuttu Paratha </h5>
+            <p>Prep : 8min | Cook : 15min</p>
+          </a>
+          <a href="s_faast.html" class="recipe">
+            <img
+              src="./images/recipes/SuranKhichdi.jpeg"
+              class="img recipe-img"
+              alt=""
+            />
+            <h5>Suran Khichdi </h5>
+            <p>Prep : 50min | Cook : 20min</p>
+          </a>
+          <a href="s_faast.html" class="recipe">
+            <img
+              src="./images/recipes/suran-sabji.jpeg"
+              class="img recipe-img"
+              alt=""
+            />
+            <h5>Suran Sabji</h5>
+            <p>Prep : 15min | Cook : 5min</p>
+          </a>
+          <a href="s_faast.html" class="recipe">
+            <img
+              src="./images/recipes/sabu.jpeg"
+              class="img recipe-img"
+              alt=""
+            />
+            <h5>Sabudana Khichdi </h5>
+            <p>Prep : 15min | Cook : 5min</p>
+          </a>
+        </div>
+      </section>
+
+      
+    </main>
+  </body>
+</html>

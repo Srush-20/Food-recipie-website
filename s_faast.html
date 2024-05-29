@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>RECIPES</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="./css/main.css" />
+  </head>
+  <body>
+    <nav class="navbar">
+        <div class="nav-center">
+          <div class="nav-header">
+            <a href="index.html" class="nav-logo">
+              <img src="./images/logo.svg" alt="simply recipes" />
+            </a>
+            <button class="nav-btn btn">
+              <i class="fas fa-align-justify"></i>
+            </button>
+          </div>
+          <div id="lin" class="nav-links">
+            <a href="index.html" class="nav-link"> home </a>
+            <a href="recipes.html" class="nav-link"> recipes </a>
+            <a href="about.html" class="nav-link"> about </a>
+  
+            <div class="nav-link contact-link">
+              <a href="contact.html" class="btn"> contact us </a>
+            </div>
+          </div>
+        </div>
+      </nav>
+      <main class="page">
+        <div class="recipe-page">
+          <section class="recipe-hero">
+            <img
+              src="./images/recipes/sabu.jpeg"
+              id="z" class="img recipe-hero-img"
+              />
+              <iframe id="vid" class="img recipe-hero-img" style="display: none;"
+                src="https://youtube.com/embed/DNvEKz6HKOA?rel=0">
+                </iframe>
+                <script>
+                  let i = parseInt(1);
+                  function vid(){
+                    if(i!=1){
+                      document.getElementById("vid").style.display="none";
+                      document.getElementById("z").style.display="block";
+                      i=1;
+                    }
+                    else{
+                      i=0;
+                      document.getElementById("vid").style.display="block";
+                      document.getElementById("z").style.display="none";
+                    }
+                  }
+                </script>
+  
+            <article class="recipe-info">
+              <h2>Sabudana Khichdi </h2>
+              </h2>
+              <p>
+                Sabudana Khichdi is a popular and delicious Indian dish, especially enjoyed during fasting periods and as a breakfast or snack.
+                 It's made from sabudana, also known as tapioca pearls, and seasoned with a mix of spices and ingredients.
+                 Sabudana Khichdi is a favorite during fasting periods in India, especially during festivals like Navratri and Maha Shivaratri. It's considered "vrat" food, 
+                 suitable for those following religious dietary restrictions.
+              </p>
+              <div class="recipe-icons">
+                <article>
+                  <i class="fas fa-clock"></i>
+                  <h5>prep time</h5>
+                  <p>20 min.</p>
+                </article>
+                <article>
+                  <i class="far fa-clock"></i>
+                  <h5>cook time</h5>
+                  <p>20 min.</p>
+                </article>
+                <article>
+                  <i class="fas fa-user-friends"></i>
+                  <h5>serving</h5>
+                  <p>5 servings</p>
+                </article>
+                <article onclick="vid()">
+                  <i class="fas fa-video"></i>
+                  <h5>Video</h5>
+                  <p>click to play</p>
+                </article>
+              </div>
+            </article>
+          </section>
+          <section class="recipe-content">
+            <article>
+              <h4>instructions</h4>
+              <div class="single-instruction">
+                <header>
+                  <p>step 1</p>
+                  <div></div>
+                </header>
+                <p>
+                    Rinse the sabudana in cold water until the water runs clear. Drain the excess water.
+                </p>
+              </div>
+              <div class="single-instruction">
+                <header>
+                  <p>step 2</p>
+                  <div></div>
+                </header>
+                <p>
+                    Place the rinsed sabudana in a bowl and add just enough water to cover it.
+                     Let it soak for 4-5 hours or until the pearls become soft and can be easily mashed between your fingers.
+                     You can also soak them overnight for best results.
+                </p>
+              </div>
+              <div class="single-instruction">
+                <header>
+                  <p>step 3</p>
+                  <div></div>
+                </header>
+                <p>
+                    Heat oil in a pan or skillet over medium heat. Add cumin seeds and asafoetida. Sauté for a few seconds until they sizzle.
+                    Add the diced potatoes and cook until they turn slightly golden and crispy.
+                    Add the chopped green chilies and sauté for a minute to infuse the spice.
+                    Now, add the soaked and drained sabudana to the pan. Mix well with the other ingredients.
+                </p>
+              </div>
+              <div class="single-instruction">
+                <header>
+                  <p>step 4</p>
+                  <div></div>
+                </header>
+                <p>
+                    Cook on low to medium heat, stirring occasionally. Sabudana will turn translucent, 
+                    indicating it's cooked. This usually takes about 5-7 minutes.
+                    Add crushed roasted peanuts and salt to taste. Mix well and cook for an additional 2-3 minutes.
+                </p>
+              </div>
+              <div class="single-instruction">
+                <header>
+                  <p>step 5</p>
+                  <div></div>
+                </header>
+                <p>
+                    Remove from heat. Garnish with fresh coriander leaves and a squeeze of lemon juice if desired.
+                    Your Sabudana Khichdi is ready to serve. Enjoy this delightful and quick dish, often served during
+                     fasting or as a snack or breakfast option.
+                </p>
+              </div>
+            </article>
+            <article class="second-column">
+              <div>
+                <h4>ingredients</h4>
+                <p class="single-ingredient">1 cup sabudana (tapioca pearls)</p>
+                <p class="single-ingredient">1/2 cup roasted peanuts, coarsely crushed</p>
+                <p class="single-ingredient">2-3 green chilies, finely chopped</p>
+                <p class="single-ingredient">1 medium-sized potato, boiled and diced</p>
+                <p class="single-ingredient"> 1 teaspoon cumin seeds </p>
+                <p class="single-ingredient"> A pinch of asafoetida (hing) </p>
+                <p class="single-ingredient">Salt to taste</p>
+                <p class="single-ingredient"> 1 large onion, thinly sliced</p>
+                <p class="single-ingredient"> 2-3 green chilies, slit lengthwise </p>
+                <p class="single-ingredient"> 2 tablespoons oil </p>
+              </div>
+            </article>
+          </section>
+        </div>
+      </main>
+      <footer class="page-footer">
+        <p>
+          &copy; <span id="date"></span>
+          <span class="footer-logo">FOODIES</span> Built by
+          <a href="https://www.instagram.com/jcer_belagavi_/"> JCER Students</a>
+        </p>
+      </footer>
+      <script src="./js/app.js"></script>
+  </body>
+</html>

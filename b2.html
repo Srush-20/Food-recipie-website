@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>RECIPES</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" />
+    <link rel="stylesheet" href="./css/main.css" />
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="nav-center">
+            <div class="nav-header">
+                <a href="index.html" class="nav-logo">
+                    <img src="./images/logo.svg" alt="simply recipes" />
+                </a>
+                <button class="nav-btn btn">
+                    <i class="fas fa-align-justify"></i>
+                </button>
+            </div>
+            <div id="lin" class="nav-links">
+                <a href="index.html" class="nav-link"> home </a>
+                <a href="recipes.html" class="nav-link"> recipes </a>
+                <a href="about.html" class="nav-link"> about </a>
+
+                <div class="nav-link contact-link">
+                    <a href="contact.html" class="btn"> contact us </a>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <main class="page">
+        <div class="recipe-page">
+            <section class="recipe-hero">
+                <img src="images/recipes/recipe-1.jpeg" id="z" class="img recipe-hero-img"
+                />
+                <iframe id="vid" class="img recipe-hero-img" style="display: none;"
+                  src="https://youtube.com/embed/Xbm8kd6E3ig?rel=0"></iframe>
+            
+                  <script>
+                    let i = parseInt(1);
+                    function vid(){
+                      if(i!=1){
+                        document.getElementById("vid").style.display="none";
+                        document.getElementById("z").style.display="block";
+                        i=1;
+                      }
+                      else{
+                        i=0;
+                        document.getElementById("vid").style.display="block";
+                        document.getElementById("z").style.display="none";
+                      }
+                    }
+           </script>
+            
+                <article class="recipe-info">
+                    <h2>Chicken Kheema</h2>
+                    <p>
+                        Chicken kheema is a flavorful Indian dish made with minced chicken. 
+                        It's typically prepared by sautéing minced chicken with a mix of aromatic
+                        spices, onions, garlic, and ginger. Tomatoes and various spices like cumin,
+                        coriander, turmeric, and chili powder are added to create a rich, savory sauce. 
+                        This dish is often garnished with fresh coriander leaves and served with rice, 
+                        roti, or naan bread. It's a popular choice for those who enjoy the flavors of 
+                        Indian cuisine and is known for its spicy and satisfying taste.
+                    </p>
+                    <div class="recipe-icons">
+                        <article>
+                            <i class="fas fa-clock"></i>
+                            <h5>prep time</h5>
+                            <p>10 min.</p>
+                        </article>
+                        <article>
+                            <i class="far fa-clock"></i>
+                            <h5>cook time</h5>
+                            <p>15 min.</p>
+                        </article>
+                        <article>
+                            <i class="fas fa-user-friends"></i>
+                            <h5>serving</h5>
+                            <p>4 servings</p>
+                        </article>
+                        <article onclick="vid()">
+                            <i class="fas fa-video"></i>
+                            <h5>Video</h5>
+                            <p>click to play</p>
+                        </article>
+                    </div>
+                </article>
+            </section>
+            <section class="recipe-content">
+                <article>
+                    <h4>instructions</h4>
+                    <div class="single-instruction">
+                        <header>
+                            <p>step 1</p>
+                            <div></div>
+                        </header>
+                        <p>
+                            Cook the spaghetti or pasta according to the package instructions in a large pot of salted
+                            boiling water
+                            until al dente. Reserve about 1 cup of pasta cooking water and then drain the pasta.
+                        </p>
+                    </div>
+                    <div class="single-instruction">
+                        <header>
+                            <p>step 2</p>
+                            <div></div>
+                        </header>
+                        <p>
+                            While the pasta is cooking, in a bowl, whisk together the eggs, grated Pecorino
+                            Romano cheese, and grated Parmesan cheese. Season with a
+                            generous pinch of black pepper. Set this mixture aside.
+                        </p>
+                    </div>
+                    <div class="single-instruction">
+                        <header>
+                            <p>step 3</p>
+                            <div></div>
+                        </header>
+                        <p>
+                            In a large skillet over medium-low heat, add the diced guanciale or pancetta. Cook until it
+                            becomes crispy and
+                            renders its fat, which should take
+                            about 4-5 minutes. If using garlic, add it to the skillet and sauté for
+                            an additional 1-2 minutes until fragrant. Remove from heat.
+                        </p>
+                    </div>
+                    <div class="single-instruction">
+                        <header>
+                            <p>step 4</p>
+                            <div></div>
+                        </header>
+                        <p>
+                            Once the pasta is cooked and drained, add it to the skillet with the
+                            cooked guanciale or pancetta (and garlic, if used). Toss to combine,
+                            ensuring that the pasta is coated with the rendered fat.
+                        </p>
+                    </div>
+                    <div class="single-instruction">
+                        <header>
+                            <p>step 5</p>
+                            <div></div>
+                        </header>
+                        <p>
+                            Quickly pour the egg and cheese mixture over the hot pasta and toss vigorously to combine.
+                            The heat from the pasta will cook the eggs and create a creamy sauce.
+                            If the sauce seems too thick, add a bit of the reserved pasta cooking
+                            water gradually until you reach your desired consistency.
+                        </p>
+                    </div>
+                </article>
+                <article class="second-column">
+                    <div>
+                        <h4>ingredients</h4>
+                        <p class="single-ingredient">12 ounces (340 grams) spaghetti or other pasta of your choice</p>
+                        <p class="single-ingredient">2 large eggs</p>
+                        <p class="single-ingredient">1 cup (about 100 grams) grated Pecorino Romano cheese</p>
+                        <p class="single-ingredient">1/2 cup (about 50 grams) grated Parmesan cheese</p>
+                        <p class="single-ingredient"> 2 cloves garlic, minced </p>
+                        <p class="single-ingredient">Salt and black pepper, to taste</p>
+                        <p class="single-ingredient">Fresh parsley, chopped, for garnish</p>
+                    </div>
+                </article>
+            </section>
+        </div>
+    </main>
+    <footer class="page-footer">
+        <p>
+          &copy; <span id="date"></span>
+          <span class="footer-logo">FOODIES</span> Built by
+          <a href="https://www.instagram.com/jcer_belagavi_/"> JCER Students</a>
+        </p>
+      </footer>
+    <script src="./css/js.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>RECIPES</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="./css/main.css" />
+  </head>
+  <body>
+    <nav class="navbar">
+        <div class="nav-center">
+          <div class="nav-header">
+            <a href="index.html" class="nav-logo">
+              <img src="./images/logo.svg" alt="simply recipes" />
+            </a>
+            <button class="nav-btn btn">
+              <i class="fas fa-align-justify"></i>
+            </button>
+          </div>
+          <div id="lin" class="nav-links">
+            <a href="index.html" class="nav-link"> home </a>
+            <a href="recipes.html" class="nav-link"> recipes </a>
+            <a href="about.html" class="nav-link"> about </a>
+  
+            <div class="nav-link contact-link">
+              <a href="contact.html" class="btn"> contact us </a>
+            </div>
+          </div>
+        </div>
+      </nav>
+      <main class="page">
+        <div class="recipe-page">
+          <section class="recipe-hero">
+            <img
+              src="./images/recipes/Bread-Upma.jpg"
+              id="z" class="img recipe-hero-img"
+            />
+            <iframe id="vid" class="img recipe-hero-img" style="display: none;"
+              src="https://youtube.com/embed/y2GPMVUqHnU?rel=0">
+              </iframe>
+              <script>
+                let i = parseInt(1);
+                function vid(){
+                  if(i!=1){
+                    document.getElementById("vid").style.display="none";
+                    document.getElementById("z").style.display="block";
+                    i=1;
+                  }
+                  else{
+                    i=0;
+                    document.getElementById("vid").style.display="block";
+                    document.getElementById("z").style.display="none";
+                  }
+                }
+              </script>
+            <article class="recipe-info">
+              <h2>Bread Upama </h2>
+              
+              <p>
+                Bread upma is a popular and easy-to-make South Indian dish that repurposes leftover bread into
+                 a flavorful and satisfying breakfast or snack. It's a versatile and quick recipe that's perfect for using up stale bread.
+                 One of the most appealing aspects of bread upma is its ability to transform leftover bread into a delicious and savory dish. Whether you have excess 
+                 bread from the previous day or want to breathe new life into slightly stale slices, bread upma is an excellent choice.
+              </p>
+              <div class="recipe-icons">
+                <article>
+                  <i class="fas fa-clock"></i>
+                  <h5>prep time</h5>
+                  <p>17 min.</p>
+                </article>
+                <article>
+                  <i class="far fa-clock"></i>
+                  <h5>cook time</h5>
+                  <p>11 min.</p>
+                </article>
+                <article>
+                  <i class="fas fa-user-friends"></i>
+                  <h5>serving</h5>
+                  <p>2 servings</p>
+                </article>
+                <article onclick="vid()">
+                  <i class="fas fa-video"></i>
+                  <h5>Video</h5>
+                  <p>click to play</p>
+                </article>
+              </div>
+            </article>
+          </section>
+          <section class="recipe-content">
+            <article>
+              <h4>instructions</h4>
+              <div class="single-instruction">
+                <header>
+                  <p>step 1</p>
+                  <div></div>
+                </header>
+                <p>
+                  Heat oil in a pan or skillet over medium heat. Add mustard seeds, urad dal, and cumin seeds. Let them splutter and become fragrant.
+                  Add finely chopped onions, slit green chilies, and curry leaves. Sauté until the onions become translucent.
+                </p>
+              </div>
+              <div class="single-instruction">
+                <header>
+                  <p>step 2</p>
+                  <div></div>
+                </header>
+                <p>
+                  Add the torn or cut bread pieces to the pan. Sprinkle turmeric powder and salt over the bread.
+                  Gently toss and stir the bread pieces in the pan, ensuring they are well-coated with the seasoned
+                   oil mixture. Cook for 2-3 minutes until the bread starts to crisp up slightly.
+                </p>
+              </div>
+              <div class="single-instruction">
+                <header>
+                  <p>step 3</p>
+                  <div></div>
+                </header>
+                <p>
+                  Remove from heat. Garnish with fresh coriander leaves if desired.
+                  Your Bread Upma is ready to serve hot. Enjoy it as a quick and delicious breakfast or snack.
+                </p>
+              </div>
+              
+            </article>
+            <article class="second-column">
+              <div>
+                <h4>ingredients</h4>
+                <p class="single-ingredient">4-5 slices of bread, torn or cut into bite-sized pieces</p>
+                <p class="single-ingredient">1 small onion, finely chopped</p>
+                <p class="single-ingredient">1/2 teaspoon mustard seeds</p>
+                <p class="single-ingredient">8-10 curry leaves</p>
+                <p class="single-ingredient"> 1/4 teaspoon turmeric powder</p>
+                <p class="single-ingredient">1/2 teaspoon cumin seeds</p>
+                <p class="single-ingredient">Salt to taste</p>
+              </div>
+            </article>
+          </section>
+        </div>
+      </main>
+      <footer class="page-footer">
+        <p>
+          &copy; <span id="date"></span>
+          <span class="footer-logo">FOODIES</span> Built by
+          <a href="https://www.instagram.com/jcer_belagavi_/"> JCER Students</a>
+        </p>
+      </footer>
+      <script src="./css/js.js"></script>
+  </body>
+</html>

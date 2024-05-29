@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ABOUT</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" />
+  <link rel="stylesheet" href="./css/main.css" />
+</head>
+
+<body>
+  <nav class="navbar">
+    <div class="nav-center">
+      <div class="nav-header">
+        <a href="index.html" class="nav-logo">
+          <img src="./images/logo.svg" alt="simply recipes" />
+        </a>
+        <button class="nav-btn btn">
+          <i class="fas fa-align-justify"></i>
+        </button>
+      </div>
+      <div id="lin" class="nav-links">
+        <a href="index.html" class="nav-link"> home </a>
+        <a href="recipes.html" class="nav-link"> recipes </a>
+        <a href="about.html" class="nav-link"> about </a>
+
+        <div class="nav-link contact-link">
+          <a href="contact.html" class="btn"> contact us </a>
+        </div>
+      </div>
+    </div>
+  </nav>
+  <main class="page">
+    <section class="contact-container">
+      <article class="contact-info">
+        <h3>Want To Get In Touch?</h3>
+        <p>
+          We'd love to hear from you! Whether you have a question, feedback, or a recipe request, please don't hesitate
+          to reach out. We're here to make your cooking journey enjoyable and satisfying.
+        </p>
+        <p>Thank you for being a part of the [Your Recipe Website Name] community. We invite you to explore our website,
+          try our recipes, and embark on a culinary adventure that will nourish both body and soul.</p>
+        <p>
+          Happy cooking!
+        </p>
+      </article>
+      <article>
+        <form class="form contact-form" action="mailto:virenpatil047@gmail.com" method="post" enctype="text/plain">
+          <div class="form-row">
+            <label html="name" class="form-label">your name</label>
+            <input type="text" name="name" id="name" class="form-input" />
+          </div>
+          <div class="form-row">
+            <label html="issue" class="form-label">in regard to</label>
+            <input type="text" name="issue" id="issue" class="form-input" />
+          </div>
+          <div class="form-row">
+            <label html="message" class="form-label">message</label>
+            <textarea name="message" id="message" class="form-textarea"></textarea>
+          </div>
+          <button type="submit" class="btn btn-block">
+            submit
+          </button>
+        </form>
+      </article>
+    </section>
+    
+  </main>
+  <footer class="page-footer">
+    <p>
+      &copy; <span id="date"></span>
+      <span class="footer-logo">FOODIES</span> Built by
+      <a href="https://www.instagram.com/jcer_belagavi_/"> JCER Students</a>
+    </p>
+  </footer>
+  <script src="./css/js.js"></script>
+</body>
+
+</html>

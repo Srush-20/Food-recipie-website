@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>RECIPES</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="./css/main.css" />
+  </head>
+  <body>
+    <nav class="navbar">
+        <div class="nav-center">
+          <div class="nav-header">
+            <a href="index.html" class="nav-logo">
+              <img src="./images/logo.svg" alt="simply recipes" />
+            </a>
+            <button class="nav-btn btn">
+              <i class="fas fa-align-justify"></i>
+            </button>
+          </div>
+          <div id="lin" class="nav-links">
+            <a href="index.html" class="nav-link"> home </a>
+            <a href="recipes.html" class="nav-link"> recipes </a>
+            <a href="about.html" class="nav-link"> about </a>
+  
+            <div class="nav-link contact-link">
+              <a href="contact.html" class="btn"> contact us </a>
+            </div>
+          </div>
+        </div>
+      </nav>
+      <main class="page">
+        <div class="recipe-page">
+          <section class="recipe-hero">
+            <img
+              src="./images/recipes/bir.jpeg" id="z" class="img recipe-hero-img"
+              />
+              <iframe id="vid" class="img recipe-hero-img" style="display: none;"
+                src="https://youtube.com/embed/uygb9O-MDPw?rel=0">
+                </iframe>
+                <script>
+                  let i = parseInt(1);
+                  function vid(){
+                    if(i!=1){
+                      document.getElementById("vid").style.display="none";
+                      document.getElementById("z").style.display="block";
+                      i=1;
+                    }
+                    else{
+                      i=0;
+                      document.getElementById("vid").style.display="block";
+                      document.getElementById("z").style.display="none";
+                    }
+                  }
+                </script>
+            <article class="recipe-info">
+              <h2>Chicken Biryani </h2>
+              <p>
+                Chicken biryani is a beloved and iconic Indian dish renowned for its aromatic flavors, tender chicken, and fragrant rice.
+                 It represents the essence of Indian cuisine and has variations across the country.
+                 Chicken biryani is celebrated for its captivating aromas and complex flavors. It features a blend of aromatic spices such as cumin, coriander, cardamom, cloves, and cinnamon, which infuse the dish with a rich and enticing fragrance.
+                  The interplay of these spices creates a multi-layered taste experience that is both comforting and exciting.
+              </p>
+              <div class="recipe-icons">
+                <article>
+                  <i class="fas fa-clock"></i>
+                  <h5>prep time</h5>
+                  <p>50 min.</p>
+                </article>
+                <article>
+                  <i class="far fa-clock"></i>
+                  <h5>cook time</h5>
+                  <p>20 min.</p>
+                </article>
+                <article>
+                  <i class="fas fa-user-friends"></i>
+                  <h5>serving</h5>
+                  <p>5 servings</p>
+                </article>
+                <article onclick="vid()">
+                  <i class="fas fa-video"></i>
+                  <h5>Video</h5>
+                  <p>click to play</p>
+                </article>
+              </div>
+            </article>
+          </section>
+          <section class="recipe-content">
+            <article>
+              <h4>instructions</h4>
+              <div class="single-instruction">
+                <header>
+                  <p>step 1</p>
+                  <div></div>
+                </header>
+                <p>
+                    In a bowl, mix yogurt, ginger-garlic paste, red chili powder, turmeric powder, salt, and lemon juice. 
+                    Add chicken pieces, coat them well, and refrigerate for at least 1 hour (or overnight for better flavor).
+                </p>
+              </div>
+              <div class="single-instruction">
+                <header>
+                  <p>step 2</p>
+                  <div></div>
+                </header>
+                <p>
+                    Rinse Basmati rice until water runs clear. Soak rice in water for 30 minutes. In a large pot, bring water to a boil, 
+                    add soaked rice, green cardamom, cloves, cinnamon, and salt. Cook until rice is 70% done, then drain and set aside.
+                </p>
+              </div>
+              <div class="single-instruction">
+                <header>
+                  <p>step 3</p>
+                  <div></div>
+                </header>
+                <p>
+                    In a large pot, heat oil or ghee over medium heat. Add sliced onions and cook until golden and crispy. Remove half for garnish.
+                </p>
+              </div>
+              <div class="single-instruction">
+                <header>
+                  <p>step 4</p>
+                  <div></div>
+                </header>
+                <p>
+                    To the pot with onions, add cumin seeds, bay leaf, and green chilies. 
+                    Sauté briefly, then add marinated chicken. Cook until it's no longer pink and begins to turn golden
+                </p>
+              </div>
+              <div class="single-instruction">
+                <header>
+                  <p>step 5</p>
+                  <div></div>
+                </header>
+                <p>
+                    Layer the partially cooked rice evenly over the chicken. Sprinkle half of the chopped coriander and mint leaves.
+                     Optionally, drizzle saffron-infused milk for fragrance and color.
+                </p>
+              </div>
+              <div class="single-instruction">
+                <header>
+                  <p>step 6</p>
+                  <div></div>
+                </header>
+                <p>
+                    Cover the pot tightly with a lid or foil. Reduce heat to low and let it cook for 20-25 minutes. 
+                    Remove from heat and rest, covered, for 10 minutes. Fluff with a fork, garnish with fried onions, 
+                    coriander, and mint leaves. Serve hot.
+                </p>
+              </div>
+            </article>
+            <article class="second-column">
+              <div>
+                <h4>ingredients</h4>
+                <p class="single-ingredient">1 lb (450g) chicken, cut into piecesr</p>
+                <p class="single-ingredient">1 cup yogurt</p>
+                <p class="single-ingredient">1 tablespoon ginger-garlic paste</p>
+                <p class="single-ingredient">1 teaspoon red chili powder</p>
+                <p class="single-ingredient"> 1.5 cups Basmati rice Water for cooking rice </p>
+                <p class="single-ingredient"> Water for cooking rice </p>
+                <p class="single-ingredient">2 tablespoons oil or ghee (clarified butter)</p>
+                <p class="single-ingredient"> 1 large onion, thinly sliced</p>
+                <p class="single-ingredient"> 2-3 green chilies, slit lengthwise </p>
+                <p class="single-ingredient"> 1 teaspoon cumin seeds </p>
+              </div>
+            </article>
+          </section>
+        </div>
+      </main>
+      <footer class="page-footer">
+        <p>
+          &copy; <span id="date"></span>
+          <span class="footer-logo">FOODIES</span> Built by
+          <a href="https://www.instagram.com/jcer_belagavi_/"> JCER Students</a>
+        </p>
+      </footer>
+      <script src="./css/js.js"></script>
+  </body>
+</html>
